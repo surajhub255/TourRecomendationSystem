@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>Users</title>
+  <title>Data List</title>
 </head>
 <body>
 <h1>HOTELS</h1>
 <table>
+  <thead>
   <tr>
-    <th>ID</th>
-    <th>HOTELS</th>
-    <th>PLACE</th>
-    <th>LAT</th>
-    <th>LON</th>
+    <th>Area</th>
+    <th>City</th>
+    <th>Overview</th>
+    <th>Rating</th>
+    <th>IsValue</th>
+    <th>Address</th>
   </tr>
-  <tr th:each="hotels : ${hotels}">
-    <td th:text="${user.ID}"></td>
-    <td th:text="${user.HOTELS}"></td>
-    <td th:text="${user.PLACE}"></td>
-    <td th:text="${user.LAT}"></td>
-    <td th:text="${user.LON}"></td>
+  </thead>
+  <tbody>
+  <tr th:each="data : ${dataList}">
+    <td th:text="${data.Area}"></td>
+    <td th:text="${data.City}"></td>
+    <td th:text="${data.Overview}"></td>
+    <td th:text="${data.Rating}"></td>
+    <td th:text="${data.IsValue}"></td>
+    <td th:text="${data.Address}"></td>
   </tr>
+  </tbody>
 </table>
 </body>
 </html>

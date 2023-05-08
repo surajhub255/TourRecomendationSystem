@@ -1,8 +1,8 @@
 package com.becoder.service;
 
 import com.becoder.model.Places;
-import com.becoder.model.Restaurant;
-import com.becoder.model.hotels;
+import com.becoder.model.Restaurants;
+import com.becoder.model.Hotels;
 import com.becoder.repository.HotelRepository;
 import com.becoder.repository.PlacesRepository;
 import com.becoder.repository.RestaurantRepository;
@@ -49,12 +49,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<hotels> getAllHotels() {
+    public List<Hotels> getAllHotels() {
         return hotelRepository.findAll();
     }
 
     @Override
-    public List<Restaurant> getAllRestaurants() {
+    public List<Restaurants> getAllRestaurants() {
         return restaurantRepository.findAll();
     }
 

@@ -1,6 +1,6 @@
 package com.becoder.repository;
 
-import com.becoder.model.hotels;
+import com.becoder.model.Hotels;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.becoder.model.UserDtls;
@@ -15,7 +15,7 @@ public interface UserRepository extends JpaRepository<UserDtls, Integer> {
 
     public UserDtls findByEmail(String email);
 
-    static List<hotels> getAll() {
+    static List<Hotels> getAll() {
         return null;
     }
 }

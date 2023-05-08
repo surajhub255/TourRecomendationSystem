@@ -1,14 +1,11 @@
 package com.becoder.controller;
 
-import javax.servlet.http.HttpSession;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
-
 import com.becoder.model.UserDtls;
 import com.becoder.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 
 @RequestMapping("suraj/tms/api/v1/")
 @RestController

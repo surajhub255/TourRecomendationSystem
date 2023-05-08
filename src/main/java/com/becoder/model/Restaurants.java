@@ -10,14 +10,17 @@ import javax.persistence.Entity;
 @Getter
 @Setter
 @Entity
-public class Places extends AbstractPersistable<Long> {
+public class Restaurants extends AbstractPersistable<Long> {
+
+    private String Name;
+
+    private String Location;
 
     private String City;
 
-    private String Place;
-
-    private String Review;
-
+    private String Cuisine;
     private String Rating;
+    private String Vote;
+    private String Cost;
 
 }
