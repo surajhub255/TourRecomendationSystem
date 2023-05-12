@@ -1,14 +1,18 @@
 package com.becoder.controller;
 
+import com.becoder.model.Hotels;
 import com.becoder.model.UserDtls;
 import com.becoder.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
-@RequestMapping("suraj/tms/api/v1/")
-@RestController
+
+@Controller
 public class HomeController {
 
     @Autowired
@@ -27,6 +31,13 @@ public class HomeController {
     @GetMapping("/register")
     public String register() {
         return "register";
+    }
+
+    @GetMapping("/hotels")
+    public String getAllHotels(Model model){
+        List<Hotels> hotelsList = userService.getAllHotels();
+        model.addAttribute("hotels", hotelsList);
+        return "user/Hotels";
     }
 
 

@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="TravelManagementSystem" />
         <module name="TMS" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="JuintAssignment" options="-parameters" />
       <module name="TMS" options="-parameters" />
+      <module name="TravelManagementSystem" options="-parameters" />
       <module name="User_Management_App" options="-parameters" />
     </option>
   </component>

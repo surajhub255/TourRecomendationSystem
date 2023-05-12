@@ -55,12 +55,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<Restaurants> getAllRestaurants() {
+
         return restaurantRepository.findAll();
     }
 
 
     @Override
     public List<Places> getAllPlaces() {
+
         return placesRepository.findAll();
     }
 }

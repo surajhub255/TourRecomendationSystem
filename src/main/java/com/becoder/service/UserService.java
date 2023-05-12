@@ -13,8 +13,6 @@ public interface UserService {
 
     public boolean checkEmail(String email);
 
-   /* List<hotels> getAllHotels();*/
-
     List<Restaurants> getAllRestaurants();
 
     List<Places> getAllPlaces();
