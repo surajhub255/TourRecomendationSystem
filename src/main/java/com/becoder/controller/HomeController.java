@@ -33,10 +33,10 @@ public class HomeController {
         return "register";
     }
 
-    @GetMapping("/hotels")
+    @GetMapping("/Hotels")
     public String getAllHotels(Model model){
         List<Hotels> hotelsList = userService.getAllHotels();
-        model.addAttribute("hotels", hotelsList);
+        model.addAttribute("Hotels", hotelsList);
         return "user/Hotels";
     }
 
