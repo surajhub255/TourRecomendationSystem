@@ -15,8 +15,5 @@ public interface UserRepository extends JpaRepository<UserDtls, Integer> {
 
     public UserDtls findByEmail(String email);
 
-    static List<Hotels> getAll() {
-        return null;
-    }
 }
 

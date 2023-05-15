@@ -1,6 +1,8 @@
 package com.becoder.controller;
 
 import com.becoder.model.Hotels;
+import com.becoder.model.Places;
+import com.becoder.model.Restaurants;
 import com.becoder.model.UserDtls;
 import com.becoder.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +35,26 @@ public class HomeController {
         return "register";
     }
 
+    @GetMapping("/Option")
+    public String option() {
+        return "user/Option";
+    }
+
+    @GetMapping("/HLocation")
+    public String HLocation() {
+        return "user/HLocation";
+    }
+
+    @GetMapping("/PLocation")
+    public String PLocation() {
+        return "user/PLocation";
+    }
+
+    @GetMapping("/RLocation")
+    public String RLocation() {
+        return "user/RLocation";
+    }
+
     @GetMapping("/Hotels")
     public String getAllHotels(Model model){
         List<Hotels> hotelsList = userService.getAllHotels();
@@ -40,6 +62,19 @@ public class HomeController {
         return "user/Hotels";
     }
 
+    @GetMapping("/Restaurants")
+    public String getAllRestaurants(Model model){
+        List<Restaurants> restaurantsList = userService.getAllRestaurants();
+        model.addAttribute("Restaurants", restaurantsList);
+        return "user/Restaurants";
+    }
+
+    @GetMapping("/Places")
+    public String getAllPlaces(Model model){
+        List<Places> placesList = userService.getAllPlaces();
+        model.addAttribute("Places", placesList);
+        return "user/Places";
+    }
 
 
 

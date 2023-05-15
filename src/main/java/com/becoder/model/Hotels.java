@@ -1,14 +1,15 @@
 package com.becoder.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
 
 
 @Entity
-@Data
-@Table(name = "hotels")
+@Getter
+@Setter
 public class Hotels extends AbstractPersistable<Long>{
 
     private String Area;
