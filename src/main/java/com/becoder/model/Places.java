@@ -21,3 +21,5 @@ public class Places extends AbstractPersistable<Long> {
     private String Rating;
 
 }
+
+
