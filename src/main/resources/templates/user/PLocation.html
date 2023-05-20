@@ -70,6 +70,34 @@ body {
     $(document).ready(function (){
     $("#ch").chosen({no_results_text: "Oops, nothing found!"});
     });
+
+
+<!--    document.getElementById("searchForm").addEventListener("submit", function(event) {-->
+<!--    event.preventDefault();-->
+
+<!--    var selectedOption = document.getElementById("ch").value;-->
+<!--    searchPlaces(selectedOption);-->
+<!--});-->
+
+<!--function searchPlaces(City) {-->
+<!--    fetch("/Places?City=" + encodeURIComponent(City))-->
+<!--        .then(function(response) {-->
+<!--            return response.json();-->
+<!--        })-->
+<!--        .then(function(data) {-->
+<!--            var resultsDiv = document.getElementById("results");-->
+<!--            resultsDiv.innerHTML = "";-->
+
+<!--            data.forEach(function(places) {-->
+<!--                var placesDiv = document.createElement("div");-->
+<!--                placesDiv.textContent = places.name;-->
+<!--                resultsDiv.appendChild(placesDiv);-->
+<!--            });-->
+<!--        })-->
+<!--        .catch(function(error) {-->
+<!--            console.error("Error searching places:", error);-->
+<!--        });-->
+<!--}-->
 </script>
 
 </body>
