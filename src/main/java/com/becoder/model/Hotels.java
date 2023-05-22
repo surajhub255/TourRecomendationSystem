@@ -12,15 +12,15 @@ import javax.persistence.Entity;
 @Setter
 public class Hotels extends AbstractPersistable<Long>{
 
-    private String Area;
+    private String area;
 
-    private String City;
+    private String city;
 
-    private String Overview;
+    private String overview;
 
-    private String Rating;
-    private String IsValue;
-    private String Address;
+    private String rating;
+
+    private String address;
 
 
 }

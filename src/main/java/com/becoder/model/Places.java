@@ -12,13 +12,13 @@ import javax.persistence.Entity;
 @Entity
 public class Places extends AbstractPersistable<Long> {
 
-    private String City;
+    private String city;
 
-    private String Place;
+    private String place;
 
-    private String Review;
+    private String review;
 
-    private String Rating;
+    private String rating;
 
 }
 
