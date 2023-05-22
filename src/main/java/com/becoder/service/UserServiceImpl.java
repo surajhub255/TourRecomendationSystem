@@ -5,7 +5,7 @@ import com.becoder.model.Restaurants;
 import com.becoder.model.Hotels;
 import com.becoder.repository.HotelRepository;
 import com.becoder.repository.PlacesRepository;
-import com.becoder.repository.RestaurantRepository;
+import com.becoder.repository.RestaurantsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
     private HotelRepository hotelRepository;
 
     @Autowired
-    private RestaurantRepository restaurantRepository;
+    private RestaurantsRepository restaurantRepository;
 
     @Autowired
     private PlacesRepository placesRepository;

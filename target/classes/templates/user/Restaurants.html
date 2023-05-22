@@ -9,6 +9,7 @@
 <table class="table table-success table-striped">
   <thead>
   <tr>
+    <th>Id</th>
     <th>Name</th>
     <th>Location</th>
     <th>City</th>
@@ -20,6 +21,7 @@
   </thead>
   <tbody>
   <tr th:each="Restaurants : ${Restaurants}">
+    <td th:text="${Restaurants.Id}"></td>
     <td th:text="${Restaurants.Name}"></td>
     <td th:text="${Restaurants.Location}"></td>
     <td th:text="${Restaurants.City}"></td>
